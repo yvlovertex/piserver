@@ -1,5 +1,4 @@
-QT += core network
-QT -= gui
+QT += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -12,12 +11,10 @@ CONFIG -= app_bundle
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp \
-    piserver.cpp
+    mainwindow.cpp
 
 HEADERS += \
-    mainwindow.h \
-    piserver.h
+    mainwindow.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

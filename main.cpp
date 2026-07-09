@@ -1,12 +1,10 @@
-#include <QCoreApplication>
-#include "piserver.h"
+#include "mainwindow.h"
+#include <QApplication>
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
-
-    // On instancie notre serveur
-    PiServer server;
-
-    return a.exec(); // Lance la boucle infinie pour que le réseau reste actif
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+    return a.exec();
 }
