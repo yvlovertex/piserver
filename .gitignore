@@ -1,0 +1,16 @@
+# Cache Python
+__pycache__/
+*.pyc
+
+# Fichiers de configuration de Qt Creator (très important !)
+*.user
+*.user.*
+
+# Dossiers de compilation (Build)
+build*/
+*.o
+*.obj
+*.exe
+
+# Logs locaux
+*.log
