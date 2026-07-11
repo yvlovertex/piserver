@@ -4,6 +4,8 @@ Ce projet permet de contrôler et de surveiller un Raspberry Pi à distance via 
 
 La connexion réseau sécurisée en dehors du réseau local est assurée de manière transparente via un maillage de réseau privé **Tailscale VPN**.
 
+<img width="715" height="595" alt="app" src="https://github.com/user-attachments/assets/29975f0e-1ec6-4b70-922c-96cc338b5b28" />
+
 ---
 
 ## 🛠️ Architecture du Projet
@@ -11,6 +13,8 @@ La connexion réseau sécurisée en dehors du réseau local est assurée de mani
 Le projet repose sur une architecture Client/Serveur découplée :
 1. **Le Client (PC Windows)** : Interface graphique en C++ pur utilisant `QTcpSocket` pour envoyer des requêtes textuelles et afficher les résultats dans une console intégrée.
 2. **Le Serveur (Raspberry Pi)** : Script Python géré par un service système (`systemd`) qui écoute en permanence sur le port `12345`, exécute les commandes Linux natives ou interagit avec Docker, puis renvoie le flux textuel au client.
+
+<img width="3586" height="1248" alt="diagram" src="https://github.com/user-attachments/assets/1fe1cc88-90fc-44db-979b-6382cbd93a92" />
 
 ---
 
